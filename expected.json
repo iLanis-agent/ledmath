@@ -1,0 +1,1530 @@
+[
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "0.01"
+  ],
+  "expected": "A 0.01 V LED on a 0.01 V rail leaves 0 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "20"
+  ],
+  "expected": "A 0.01 V LED on a 0.01 V rail leaves 0 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "350"
+  ],
+  "expected": "A 0.01 V LED on a 0.01 V rail leaves 0 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "1000"
+  ],
+  "expected": "A 0.01 V LED on a 0.01 V rail leaves 0 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "1.8",
+   "0.01"
+  ],
+  "expected": "A 1.8 V LED on a 0.01 V rail leaves -1.79 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "1.8",
+   "20"
+  ],
+  "expected": "A 1.8 V LED on a 0.01 V rail leaves -1.79 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "1.8",
+   "350"
+  ],
+  "expected": "A 1.8 V LED on a 0.01 V rail leaves -1.79 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "1.8",
+   "1000"
+  ],
+  "expected": "A 1.8 V LED on a 0.01 V rail leaves -1.79 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "2",
+   "0.01"
+  ],
+  "expected": "A 2 V LED on a 0.01 V rail leaves -1.99 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "2",
+   "20"
+  ],
+  "expected": "A 2 V LED on a 0.01 V rail leaves -1.99 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "2",
+   "350"
+  ],
+  "expected": "A 2 V LED on a 0.01 V rail leaves -1.99 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "2",
+   "1000"
+  ],
+  "expected": "A 2 V LED on a 0.01 V rail leaves -1.99 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "3.2",
+   "0.01"
+  ],
+  "expected": "A 3.2 V LED on a 0.01 V rail leaves -3.19 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "3.2",
+   "20"
+  ],
+  "expected": "A 3.2 V LED on a 0.01 V rail leaves -3.19 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "3.2",
+   "350"
+  ],
+  "expected": "A 3.2 V LED on a 0.01 V rail leaves -3.19 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "3.2",
+   "1000"
+  ],
+  "expected": "A 3.2 V LED on a 0.01 V rail leaves -3.19 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "100",
+   "0.01"
+  ],
+  "expected": "A 100 V LED on a 0.01 V rail leaves -99.99 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "100",
+   "20"
+  ],
+  "expected": "A 100 V LED on a 0.01 V rail leaves -99.99 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "100",
+   "350"
+  ],
+  "expected": "A 100 V LED on a 0.01 V rail leaves -99.99 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0.01",
+   "100",
+   "1000"
+  ],
+  "expected": "A 100 V LED on a 0.01 V rail leaves -99.99 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "0.01",
+   "0.01"
+  ],
+  "expected": "A 0.01 V LED on a 5 V rail leaves 4.99 V for the resistor. At 0.01 mA that calls for 499000 \u03a9, and the resistor turns 0.05 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "0.01",
+   "20"
+  ],
+  "expected": "A 0.01 V LED on a 5 V rail leaves 4.99 V for the resistor. At 20 mA that calls for 249.5 \u03a9, and the resistor turns 99.8 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "0.01",
+   "350"
+  ],
+  "expected": "A 0.01 V LED on a 5 V rail leaves 4.99 V for the resistor. At 350 mA that calls for 14.26 \u03a9, and the resistor turns 1746.5 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "0.01",
+   "1000"
+  ],
+  "expected": "A 0.01 V LED on a 5 V rail leaves 4.99 V for the resistor. At 1000 mA that calls for 4.99 \u03a9, and the resistor turns 4990 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "1.8",
+   "0.01"
+  ],
+  "expected": "A 1.8 V LED on a 5 V rail leaves 3.2 V for the resistor. At 0.01 mA that calls for 320000 \u03a9, and the resistor turns 0.03 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "1.8",
+   "20"
+  ],
+  "expected": "A 1.8 V LED on a 5 V rail leaves 3.2 V for the resistor. At 20 mA that calls for 160 \u03a9, and the resistor turns 64 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "1.8",
+   "350"
+  ],
+  "expected": "A 1.8 V LED on a 5 V rail leaves 3.2 V for the resistor. At 350 mA that calls for 9.14 \u03a9, and the resistor turns 1120 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "1.8",
+   "1000"
+  ],
+  "expected": "A 1.8 V LED on a 5 V rail leaves 3.2 V for the resistor. At 1000 mA that calls for 3.2 \u03a9, and the resistor turns 3200 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "2",
+   "0.01"
+  ],
+  "expected": "A 2 V LED on a 5 V rail leaves 3 V for the resistor. At 0.01 mA that calls for 300000 \u03a9, and the resistor turns 0.03 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "2",
+   "20"
+  ],
+  "expected": "A 2 V LED on a 5 V rail leaves 3 V for the resistor. At 20 mA that calls for 150 \u03a9, and the resistor turns 60 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "2",
+   "350"
+  ],
+  "expected": "A 2 V LED on a 5 V rail leaves 3 V for the resistor. At 350 mA that calls for 8.57 \u03a9, and the resistor turns 1050 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "2",
+   "1000"
+  ],
+  "expected": "A 2 V LED on a 5 V rail leaves 3 V for the resistor. At 1000 mA that calls for 3 \u03a9, and the resistor turns 3000 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "3.2",
+   "0.01"
+  ],
+  "expected": "A 3.2 V LED on a 5 V rail leaves 1.8 V for the resistor. At 0.01 mA that calls for 180000 \u03a9, and the resistor turns 0.02 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "3.2",
+   "20"
+  ],
+  "expected": "A 3.2 V LED on a 5 V rail leaves 1.8 V for the resistor. At 20 mA that calls for 90 \u03a9, and the resistor turns 36 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "3.2",
+   "350"
+  ],
+  "expected": "A 3.2 V LED on a 5 V rail leaves 1.8 V for the resistor. At 350 mA that calls for 5.14 \u03a9, and the resistor turns 630 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "3.2",
+   "1000"
+  ],
+  "expected": "A 3.2 V LED on a 5 V rail leaves 1.8 V for the resistor. At 1000 mA that calls for 1.8 \u03a9, and the resistor turns 1800 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "100",
+   "0.01"
+  ],
+  "expected": "A 100 V LED on a 5 V rail leaves -95 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "100",
+   "20"
+  ],
+  "expected": "A 100 V LED on a 5 V rail leaves -95 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "100",
+   "350"
+  ],
+  "expected": "A 100 V LED on a 5 V rail leaves -95 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "5",
+   "100",
+   "1000"
+  ],
+  "expected": "A 100 V LED on a 5 V rail leaves -95 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "0.01",
+   "0.01"
+  ],
+  "expected": "A 0.01 V LED on a 9 V rail leaves 8.99 V for the resistor. At 0.01 mA that calls for 899000 \u03a9, and the resistor turns 0.09 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "0.01",
+   "20"
+  ],
+  "expected": "A 0.01 V LED on a 9 V rail leaves 8.99 V for the resistor. At 20 mA that calls for 449.5 \u03a9, and the resistor turns 179.8 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "0.01",
+   "350"
+  ],
+  "expected": "A 0.01 V LED on a 9 V rail leaves 8.99 V for the resistor. At 350 mA that calls for 25.69 \u03a9, and the resistor turns 3146.5 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "0.01",
+   "1000"
+  ],
+  "expected": "A 0.01 V LED on a 9 V rail leaves 8.99 V for the resistor. At 1000 mA that calls for 8.99 \u03a9, and the resistor turns 8990 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "1.8",
+   "0.01"
+  ],
+  "expected": "A 1.8 V LED on a 9 V rail leaves 7.2 V for the resistor. At 0.01 mA that calls for 720000 \u03a9, and the resistor turns 0.07 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "1.8",
+   "20"
+  ],
+  "expected": "A 1.8 V LED on a 9 V rail leaves 7.2 V for the resistor. At 20 mA that calls for 360 \u03a9, and the resistor turns 144 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "1.8",
+   "350"
+  ],
+  "expected": "A 1.8 V LED on a 9 V rail leaves 7.2 V for the resistor. At 350 mA that calls for 20.57 \u03a9, and the resistor turns 2520 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "1.8",
+   "1000"
+  ],
+  "expected": "A 1.8 V LED on a 9 V rail leaves 7.2 V for the resistor. At 1000 mA that calls for 7.2 \u03a9, and the resistor turns 7200 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "2",
+   "0.01"
+  ],
+  "expected": "A 2 V LED on a 9 V rail leaves 7 V for the resistor. At 0.01 mA that calls for 700000 \u03a9, and the resistor turns 0.07 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "2",
+   "20"
+  ],
+  "expected": "A 2 V LED on a 9 V rail leaves 7 V for the resistor. At 20 mA that calls for 350 \u03a9, and the resistor turns 140 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "2",
+   "350"
+  ],
+  "expected": "A 2 V LED on a 9 V rail leaves 7 V for the resistor. At 350 mA that calls for 20 \u03a9, and the resistor turns 2450 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "2",
+   "1000"
+  ],
+  "expected": "A 2 V LED on a 9 V rail leaves 7 V for the resistor. At 1000 mA that calls for 7 \u03a9, and the resistor turns 7000 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "3.2",
+   "0.01"
+  ],
+  "expected": "A 3.2 V LED on a 9 V rail leaves 5.8 V for the resistor. At 0.01 mA that calls for 580000 \u03a9, and the resistor turns 0.06 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "3.2",
+   "20"
+  ],
+  "expected": "A 3.2 V LED on a 9 V rail leaves 5.8 V for the resistor. At 20 mA that calls for 290 \u03a9, and the resistor turns 116 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "3.2",
+   "350"
+  ],
+  "expected": "A 3.2 V LED on a 9 V rail leaves 5.8 V for the resistor. At 350 mA that calls for 16.57 \u03a9, and the resistor turns 2030 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "3.2",
+   "1000"
+  ],
+  "expected": "A 3.2 V LED on a 9 V rail leaves 5.8 V for the resistor. At 1000 mA that calls for 5.8 \u03a9, and the resistor turns 5800 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "100",
+   "0.01"
+  ],
+  "expected": "A 100 V LED on a 9 V rail leaves -91 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "100",
+   "20"
+  ],
+  "expected": "A 100 V LED on a 9 V rail leaves -91 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "100",
+   "350"
+  ],
+  "expected": "A 100 V LED on a 9 V rail leaves -91 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "100",
+   "1000"
+  ],
+  "expected": "A 100 V LED on a 9 V rail leaves -91 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "0.01",
+   "0.01"
+  ],
+  "expected": "A 0.01 V LED on a 12 V rail leaves 11.99 V for the resistor. At 0.01 mA that calls for 1199000 \u03a9, and the resistor turns 0.12 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "0.01",
+   "20"
+  ],
+  "expected": "A 0.01 V LED on a 12 V rail leaves 11.99 V for the resistor. At 20 mA that calls for 599.5 \u03a9, and the resistor turns 239.8 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "0.01",
+   "350"
+  ],
+  "expected": "A 0.01 V LED on a 12 V rail leaves 11.99 V for the resistor. At 350 mA that calls for 34.26 \u03a9, and the resistor turns 4196.5 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "0.01",
+   "1000"
+  ],
+  "expected": "A 0.01 V LED on a 12 V rail leaves 11.99 V for the resistor. At 1000 mA that calls for 11.99 \u03a9, and the resistor turns 11990 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "1.8",
+   "0.01"
+  ],
+  "expected": "A 1.8 V LED on a 12 V rail leaves 10.2 V for the resistor. At 0.01 mA that calls for 1020000 \u03a9, and the resistor turns 0.1 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "1.8",
+   "20"
+  ],
+  "expected": "A 1.8 V LED on a 12 V rail leaves 10.2 V for the resistor. At 20 mA that calls for 510 \u03a9, and the resistor turns 204 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "1.8",
+   "350"
+  ],
+  "expected": "A 1.8 V LED on a 12 V rail leaves 10.2 V for the resistor. At 350 mA that calls for 29.14 \u03a9, and the resistor turns 3570 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "1.8",
+   "1000"
+  ],
+  "expected": "A 1.8 V LED on a 12 V rail leaves 10.2 V for the resistor. At 1000 mA that calls for 10.2 \u03a9, and the resistor turns 10200 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "2",
+   "0.01"
+  ],
+  "expected": "A 2 V LED on a 12 V rail leaves 10 V for the resistor. At 0.01 mA that calls for 1000000 \u03a9, and the resistor turns 0.1 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "2",
+   "20"
+  ],
+  "expected": "A 2 V LED on a 12 V rail leaves 10 V for the resistor. At 20 mA that calls for 500 \u03a9, and the resistor turns 200 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "2",
+   "350"
+  ],
+  "expected": "A 2 V LED on a 12 V rail leaves 10 V for the resistor. At 350 mA that calls for 28.57 \u03a9, and the resistor turns 3500 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "2",
+   "1000"
+  ],
+  "expected": "A 2 V LED on a 12 V rail leaves 10 V for the resistor. At 1000 mA that calls for 10 \u03a9, and the resistor turns 10000 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "3.2",
+   "0.01"
+  ],
+  "expected": "A 3.2 V LED on a 12 V rail leaves 8.8 V for the resistor. At 0.01 mA that calls for 880000 \u03a9, and the resistor turns 0.09 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "3.2",
+   "20"
+  ],
+  "expected": "A 3.2 V LED on a 12 V rail leaves 8.8 V for the resistor. At 20 mA that calls for 440 \u03a9, and the resistor turns 176 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "3.2",
+   "350"
+  ],
+  "expected": "A 3.2 V LED on a 12 V rail leaves 8.8 V for the resistor. At 350 mA that calls for 25.14 \u03a9, and the resistor turns 3080 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "3.2",
+   "1000"
+  ],
+  "expected": "A 3.2 V LED on a 12 V rail leaves 8.8 V for the resistor. At 1000 mA that calls for 8.8 \u03a9, and the resistor turns 8800 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "100",
+   "0.01"
+  ],
+  "expected": "A 100 V LED on a 12 V rail leaves -88 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "100",
+   "20"
+  ],
+  "expected": "A 100 V LED on a 12 V rail leaves -88 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "100",
+   "350"
+  ],
+  "expected": "A 100 V LED on a 12 V rail leaves -88 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "12",
+   "100",
+   "1000"
+  ],
+  "expected": "A 100 V LED on a 12 V rail leaves -88 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "0.01",
+   "0.01"
+  ],
+  "expected": "A 0.01 V LED on a 100 V rail leaves 99.99 V for the resistor. At 0.01 mA that calls for 9999000 \u03a9, and the resistor turns 1 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "0.01",
+   "20"
+  ],
+  "expected": "A 0.01 V LED on a 100 V rail leaves 99.99 V for the resistor. At 20 mA that calls for 4999.5 \u03a9, and the resistor turns 1999.8 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "0.01",
+   "350"
+  ],
+  "expected": "A 0.01 V LED on a 100 V rail leaves 99.99 V for the resistor. At 350 mA that calls for 285.69 \u03a9, and the resistor turns 34996.5 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "0.01",
+   "1000"
+  ],
+  "expected": "A 0.01 V LED on a 100 V rail leaves 99.99 V for the resistor. At 1000 mA that calls for 99.99 \u03a9, and the resistor turns 99990 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "1.8",
+   "0.01"
+  ],
+  "expected": "A 1.8 V LED on a 100 V rail leaves 98.2 V for the resistor. At 0.01 mA that calls for 9820000 \u03a9, and the resistor turns 0.98 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "1.8",
+   "20"
+  ],
+  "expected": "A 1.8 V LED on a 100 V rail leaves 98.2 V for the resistor. At 20 mA that calls for 4910 \u03a9, and the resistor turns 1964 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "1.8",
+   "350"
+  ],
+  "expected": "A 1.8 V LED on a 100 V rail leaves 98.2 V for the resistor. At 350 mA that calls for 280.57 \u03a9, and the resistor turns 34370 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "1.8",
+   "1000"
+  ],
+  "expected": "A 1.8 V LED on a 100 V rail leaves 98.2 V for the resistor. At 1000 mA that calls for 98.2 \u03a9, and the resistor turns 98200 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "2",
+   "0.01"
+  ],
+  "expected": "A 2 V LED on a 100 V rail leaves 98 V for the resistor. At 0.01 mA that calls for 9800000 \u03a9, and the resistor turns 0.98 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "2",
+   "20"
+  ],
+  "expected": "A 2 V LED on a 100 V rail leaves 98 V for the resistor. At 20 mA that calls for 4900 \u03a9, and the resistor turns 1960 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "2",
+   "350"
+  ],
+  "expected": "A 2 V LED on a 100 V rail leaves 98 V for the resistor. At 350 mA that calls for 280 \u03a9, and the resistor turns 34300 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "2",
+   "1000"
+  ],
+  "expected": "A 2 V LED on a 100 V rail leaves 98 V for the resistor. At 1000 mA that calls for 98 \u03a9, and the resistor turns 98000 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "3.2",
+   "0.01"
+  ],
+  "expected": "A 3.2 V LED on a 100 V rail leaves 96.8 V for the resistor. At 0.01 mA that calls for 9680000 \u03a9, and the resistor turns 0.97 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "3.2",
+   "20"
+  ],
+  "expected": "A 3.2 V LED on a 100 V rail leaves 96.8 V for the resistor. At 20 mA that calls for 4840 \u03a9, and the resistor turns 1936 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "3.2",
+   "350"
+  ],
+  "expected": "A 3.2 V LED on a 100 V rail leaves 96.8 V for the resistor. At 350 mA that calls for 276.57 \u03a9, and the resistor turns 33880 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "3.2",
+   "1000"
+  ],
+  "expected": "A 3.2 V LED on a 100 V rail leaves 96.8 V for the resistor. At 1000 mA that calls for 96.8 \u03a9, and the resistor turns 96800 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "100",
+   "0.01"
+  ],
+  "expected": "A 100 V LED on a 100 V rail leaves 0 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "100",
+   "20"
+  ],
+  "expected": "A 100 V LED on a 100 V rail leaves 0 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "100",
+   "350"
+  ],
+  "expected": "A 100 V LED on a 100 V rail leaves 0 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "100",
+   "100",
+   "1000"
+  ],
+  "expected": "A 100 V LED on a 100 V rail leaves 0 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "2",
+   "20",
+   "1"
+  ],
+  "expected": "1 LED at 2 V drops 2 V. On the 9 V rail that leaves 7 V, so 20 mA calls for 350 \u03a9 and the resistor turns 140 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "4",
+   "20",
+   "1"
+  ],
+  "expected": "1 LED at 4 V drops 4 V. On the 9 V rail that leaves 5 V, so 20 mA calls for 250 \u03a9 and the resistor turns 100 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "100",
+   "0.01",
+   "1000",
+   "1"
+  ],
+  "expected": "1 LED at 0.01 V drops 0.01 V. On the 100 V rail that leaves 99.99 V, so 1000 mA calls for 99.99 \u03a9 and the resistor turns 99990 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "2",
+   "20",
+   "2"
+  ],
+  "expected": "2 LEDs at 2 V drop 4 V. On the 9 V rail that leaves 5 V, so 20 mA calls for 250 \u03a9 and the resistor turns 100 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "4",
+   "20",
+   "2"
+  ],
+  "expected": "2 LEDs at 4 V drop 8 V. On the 9 V rail that leaves 1 V, so 20 mA calls for 50 \u03a9 and the resistor turns 20 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "100",
+   "0.01",
+   "1000",
+   "2"
+  ],
+  "expected": "2 LEDs at 0.01 V drop 0.02 V. On the 100 V rail that leaves 99.98 V, so 1000 mA calls for 99.98 \u03a9 and the resistor turns 99980 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "2",
+   "20",
+   "3"
+  ],
+  "expected": "3 LEDs at 2 V drop 6 V. On the 9 V rail that leaves 3 V, so 20 mA calls for 150 \u03a9 and the resistor turns 60 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "4",
+   "20",
+   "3"
+  ],
+  "expected": "3 LEDs at 4 V drop 12 V, which leaves -3 V on the 9 V rail - the arithmetic has no positive resistor answer."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "100",
+   "0.01",
+   "1000",
+   "3"
+  ],
+  "expected": "3 LEDs at 0.01 V drop 0.03 V. On the 100 V rail that leaves 99.97 V, so 1000 mA calls for 99.97 \u03a9 and the resistor turns 99970 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "2",
+   "20",
+   "50"
+  ],
+  "expected": "50 LEDs at 2 V drop 100 V, which leaves -91 V on the 9 V rail - the arithmetic has no positive resistor answer."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "4",
+   "20",
+   "50"
+  ],
+  "expected": "50 LEDs at 4 V drop 200 V, which leaves -191 V on the 9 V rail - the arithmetic has no positive resistor answer."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "100",
+   "0.01",
+   "1000",
+   "50"
+  ],
+  "expected": "50 LEDs at 0.01 V drop 0.5 V. On the 100 V rail that leaves 99.5 V, so 1000 mA calls for 99.5 \u03a9 and the resistor turns 99500 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "2",
+   "20",
+   "100"
+  ],
+  "expected": "100 LEDs at 2 V drop 200 V, which leaves -191 V on the 9 V rail - the arithmetic has no positive resistor answer."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "4",
+   "20",
+   "100"
+  ],
+  "expected": "100 LEDs at 4 V drop 400 V, which leaves -391 V on the 9 V rail - the arithmetic has no positive resistor answer."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "100",
+   "0.01",
+   "1000",
+   "100"
+  ],
+  "expected": "100 LEDs at 0.01 V drop 1 V. On the 100 V rail that leaves 99 V, so 1000 mA calls for 99 \u03a9 and the resistor turns 99000 mW into heat."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "20",
+   "1"
+  ],
+  "expected": "1 string at 20 mA draws 20 mA from the 9 V rail, 0.18 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "1"
+  ],
+  "expected": "1 string at 0.01 mA draws 0.01 mA from the 0.01 V rail, 0 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "100",
+   "1000",
+   "1"
+  ],
+  "expected": "1 string at 1000 mA draws 1000 mA from the 100 V rail, 100 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "20",
+   "2"
+  ],
+  "expected": "2 strings at 20 mA draw 40 mA from the 9 V rail, 0.36 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "2"
+  ],
+  "expected": "2 strings at 0.01 mA draw 0.02 mA from the 0.01 V rail, 0 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "100",
+   "1000",
+   "2"
+  ],
+  "expected": "2 strings at 1000 mA draw 2000 mA from the 100 V rail, 200 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "20",
+   "4"
+  ],
+  "expected": "4 strings at 20 mA draw 80 mA from the 9 V rail, 0.72 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "4"
+  ],
+  "expected": "4 strings at 0.01 mA draw 0.04 mA from the 0.01 V rail, 0 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "100",
+   "1000",
+   "4"
+  ],
+  "expected": "4 strings at 1000 mA draw 4000 mA from the 100 V rail, 400 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "20",
+   "100"
+  ],
+  "expected": "100 strings at 20 mA draw 2000 mA from the 9 V rail, 18 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "0.01",
+   "0.01",
+   "100"
+  ],
+  "expected": "100 strings at 0.01 mA draw 1 mA from the 0.01 V rail, 0 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "100",
+   "1000",
+   "100"
+  ],
+  "expected": "100 strings at 1000 mA draw 100000 mA from the 100 V rail, 10000 W in all."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "0",
+   "2",
+   "20"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "0",
+   "20"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "2",
+   "0"
+  ],
+  "expected": "ERR:the current must be from 0.01 to 1000 mA with at most two decimal places"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "2",
+   "20",
+   "0"
+  ],
+  "expected": "ERR:the LED count must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "0",
+   "2",
+   "20",
+   "3"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "0",
+   "4"
+  ],
+  "expected": "ERR:the current must be from 0.01 to 1000 mA with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "0",
+   "20",
+   "4"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "20",
+   "0"
+  ],
+  "expected": "ERR:the string count must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "101",
+   "2",
+   "20"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "101",
+   "20"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "2",
+   "101"
+  ],
+  "expected": "A 2 V LED on a 9 V rail leaves 7 V for the resistor. At 101 mA that calls for 69.31 \u03a9, and the resistor turns 707 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "2",
+   "20",
+   "101"
+  ],
+  "expected": "ERR:the LED count must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "101",
+   "2",
+   "20",
+   "3"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "101",
+   "4"
+  ],
+  "expected": "4 strings at 101 mA draw 404 mA from the 9 V rail, 3.64 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "101",
+   "20",
+   "4"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "20",
+   "101"
+  ],
+  "expected": "ERR:the string count must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "1.5",
+   "2",
+   "20"
+  ],
+  "expected": "A 2 V LED on a 1.5 V rail leaves -0.5 V for the resistor, and the arithmetic has no positive answer."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "1.5",
+   "20"
+  ],
+  "expected": "A 1.5 V LED on a 9 V rail leaves 7.5 V for the resistor. At 20 mA that calls for 375 \u03a9, and the resistor turns 150 mW into heat."
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "2",
+   "1.5"
+  ],
+  "expected": "A 2 V LED on a 9 V rail leaves 7 V for the resistor. At 1.5 mA that calls for 4666.67 \u03a9, and the resistor turns 10.5 mW into heat."
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "2",
+   "20",
+   "1.5"
+  ],
+  "expected": "ERR:the LED count must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "1.5",
+   "2",
+   "20",
+   "3"
+  ],
+  "expected": "3 LEDs at 2 V drop 6 V, which leaves -4.5 V on the 1.5 V rail - the arithmetic has no positive resistor answer."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "1.5",
+   "4"
+  ],
+  "expected": "4 strings at 1.5 mA draw 6 mA from the 9 V rail, 0.05 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "1.5",
+   "20",
+   "4"
+  ],
+  "expected": "4 strings at 20 mA draw 80 mA from the 1.5 V rail, 0.12 W in all."
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "20",
+   "1.5"
+  ],
+  "expected": "ERR:the string count must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "x",
+   "2",
+   "20"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "x",
+   "20"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "2",
+   "x"
+  ],
+  "expected": "ERR:the current must be from 0.01 to 1000 mA with at most two decimal places"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "2",
+   "20",
+   "x"
+  ],
+  "expected": "ERR:the LED count must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "x",
+   "2",
+   "20",
+   "3"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "x",
+   "4"
+  ],
+  "expected": "ERR:the current must be from 0.01 to 1000 mA with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "x",
+   "20",
+   "4"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "20",
+   "x"
+  ],
+  "expected": "ERR:the string count must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "",
+   "2",
+   "20"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "",
+   "20"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "resistorTruth",
+  "args": [
+   "9",
+   "2",
+   ""
+  ],
+  "expected": "ERR:the current must be from 0.01 to 1000 mA with at most two decimal places"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "9",
+   "2",
+   "20",
+   ""
+  ],
+  "expected": "ERR:the LED count must be a whole number from 1 to 100"
+ },
+ {
+  "fn": "chainTruth",
+  "args": [
+   "",
+   "2",
+   "20",
+   "3"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "",
+   "4"
+  ],
+  "expected": "ERR:the current must be from 0.01 to 1000 mA with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "",
+   "20",
+   "4"
+  ],
+  "expected": "ERR:each voltage must be from 0.01 to 100 V with at most two decimal places"
+ },
+ {
+  "fn": "stringsTruth",
+  "args": [
+   "9",
+   "20",
+   ""
+  ],
+  "expected": "ERR:the string count must be a whole number from 1 to 100"
+ }
+]
