@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LED Math - series resistor arithmetic</title>
+<style>
+  :root { --accent:#a83a5e; --ink:#2e1420; --paper:#fbf5f8; --soft:#f3e3ea; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#9c6a80; }
+</style>
+</head>
+<body>
+<main>
+  <h1>LED Math</h1>
+  <p class="lede">A 2 V LED on a 9 V rail leaves 7 V for the resistor, so 20 mA calls for 350 Ω and the resistor turns 140 mW into heat.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    LED Math works out series resistors, chain drops and rail draw from the numbers you type. The voltages, currents and counts are yours to measure or read off your own parts. It treats every LED and resistor as ideal, so it has not seen your circuit and does not know the bin, the temperature, the wiring or the supply, and it gives no verdict that a resistor, an LED or a rail is adequate or safe. Every number here is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: a 2 V LED at 20 mA on a 9 V rail, three of them in a chain, and four strings in parallel.</p>
+  <section>
+    <h2>The resistor truth</h2>
+    <p>A 2 V LED on a 9 V rail leaves 7 V for the resistor. At 20 mA that calls for 350 Ω, and the resistor turns 140 mW into heat.</p>
+  </section>
+  <section>
+    <h2>The chain truth</h2>
+    <p>3 LEDs at 2 V drop 6 V. On the 9 V rail that leaves 3 V, so 20 mA calls for 150 Ω and the resistor turns 60 mW into heat.</p>
+  </section>
+  <section>
+    <h2>The strings truth</h2>
+    <p>4 strings at 20 mA draw 80 mA from the 9 V rail, 0.72 W in all.</p>
+  </section>
+  <a class="btn" href="app.html">Light your numbers</a>
+  <footer>LED Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
