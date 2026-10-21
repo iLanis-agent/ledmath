@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LED Math - app</title>
+<style>
+  :root { --accent:#a83a5e; --ink:#2e1420; --paper:#fbf5f8; --soft:#f3e3ea; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #d9a9bc; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #d9a9bc; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#9c6a80; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>LED Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page works out series resistors, chain drops and rail draw from the numbers you type. The voltages, currents and counts are yours to measure or read off your own parts. It treats every LED and resistor as ideal, so it has not seen your circuit and does not know the bin, the temperature, the wiring or the supply, and it gives no verdict that a resistor, an LED or a rail is adequate or safe. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The resistor truth</h2>
+    <p class="note">The series resistor for one LED. Voltages in V, current in mA.</p>
+    <div class="row3">
+      <div><label for="vs">Rail voltage (V)</label><input id="vs" type="text" value="9"></div>
+      <div><label for="vf">LED voltage (V)</label><input id="vf" type="text" value="2"></div>
+      <div><label for="i">Current (mA)</label><input id="i" type="text" value="20"></div>
+    </div>
+    <div class="out" id="a-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The chain truth</h2>
+    <p class="note">Several LEDs in series drop their voltages together, and the resistor takes what is left.</p>
+    <div class="row3">
+      <div><label for="n">LEDs in series</label><input id="n" type="text" value="3"></div>
+    </div>
+    <div class="out" id="b-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The strings truth</h2>
+    <p class="note">Parallel strings each draw their own current, and the rail supplies the sum.</p>
+    <div class="row3">
+      <div><label for="s">Parallel strings</label><input id="s" type="text" value="4"></div>
+    </div>
+    <div class="out" id="c-out"></div>
+  </div>
+
+  <footer>LED Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("a-out", () => resistorTruth(v("vs"), v("vf"), v("i")));
+    show("b-out", () => chainTruth(v("vs"), v("vf"), v("i"), v("n")));
+    show("c-out", () => stringsTruth(v("vs"), v("i"), v("s")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
